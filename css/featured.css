@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 135px;
 }
 
 .featured .title {
@@ -30,10 +31,6 @@
 .featured .photo {
   width: 100%;
   margin-bottom: 42px;
-}
-
-.featured .caption {
-  color: #222;
 }
 
 @media (max-width: 800px) {
