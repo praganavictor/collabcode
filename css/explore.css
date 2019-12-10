@@ -2,13 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 158px;
 }
 
 .explore .images {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 46px;
+  width: 100%;
+}
+
+.explore .item {
+  width: 33%;
+}
+
+.explore .photo {
   width: 100%;
 }
 
@@ -29,4 +37,35 @@
   line-height: 1em;
   letter-spacing: 4px;
   text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .explore {
+    margin-bottom: 80px;
+  }
+
+  .explore .images {
+    margin-bottom: 25px;
+  }
+
+  .explore .description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .explore .button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 370px) {
+  .explore .images {
+    flex-direction: column;
+  }
+
+  .explore .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
